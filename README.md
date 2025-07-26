@@ -8,7 +8,9 @@ Responsive Design: Works on tablets, phones, and desktop
 
 Future Development Will Include:
 ✅ Customer loyalty program integration
-✅ Automated inventory tracking
+
+✅ Automated inventory 
+
 ✅ Driver dispatch system
 
 Built with:
