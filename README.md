@@ -7,6 +7,7 @@ Admin Dashboard: View analytics, sales trends, and kitchen performance
 Responsive Design: Works on tablets, phones, and desktop
 
 Future Development Will Include:
+
 ✅ Customer loyalty program integration
 
 ✅ Automated inventory 
