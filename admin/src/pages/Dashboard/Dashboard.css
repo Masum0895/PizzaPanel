@@ -1,0 +1,13 @@
+.dashboard {
+    padding: 20px;
+    width: 100%;
+}
+
+.dashboard h2 {
+    margin-bottom: 20px;
+}
+
+.chart-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
