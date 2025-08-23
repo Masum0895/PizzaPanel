@@ -16,6 +16,10 @@
     color:#49557e;
 }
 
+.navbar-menu-item {
+    padding: 20px 0px;
+}
+
 .navbar-right{
     display: flex;
     align-items: center;
@@ -52,12 +56,18 @@
 
 .navbar-search-icon .dot{
     position: absolute;
-    min-width: 10px;
-    min-height: 10px;
+    width: 18px;
+    height: 18px;
     background-color: tomato;
-    border-radius: 5px;
+    border-radius: 50%;
     top:-8px;
     right:-8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+    padding: 2px;
 }
 
 @media (nax-width:150px){

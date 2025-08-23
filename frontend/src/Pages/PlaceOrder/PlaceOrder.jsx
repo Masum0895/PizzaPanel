@@ -40,12 +40,17 @@ const placeOrder = async (event) =>{
     items:orderItems,
     amount:getTotalCartAmount()+2,
   }
-  let response = await axios.post (url+"/api/order/place",orderData,{headers:{token}})
-  if (response.data.success){
-    const {session_url} = response.data;
-    window.location.replace(session_url);
-  }else{
-    alert("Error")
+  try {
+    let response = await axios.post(url + "/api/order/place", orderData, { headers: { token}});
+    if (response.data.success) {
+      const { session_url } = response.data;
+      window.location.replace(session_url);
+    } else {
+      alert(response.data.message || "An error occurred while placing the order.");
+    }
+  } catch (error) {
+    console.error("Error placing order:", error);
+    alert("Authentication failed. Please log in again.");
   }
 }
 
