@@ -50,4 +50,22 @@ const removeFood = async (req,res) =>{
 }
 
 
-export {addFood,listFood,removeFood}
+
+const foodStats = async (req, res) => {
+    try {
+        const stats = await foodModel.aggregate([
+            {
+                $group: {
+                    _id: "$category",
+                    count: { $sum: 1 }
+                }
+            }
+        ]);
+        res.json({ success: true, data: stats });
+    } catch (error) {
+        console.log(error);
+        res.json({ success: false, message: "Error" });
+    }
+}
+
+export {addFood,listFood,removeFood, foodStats}
